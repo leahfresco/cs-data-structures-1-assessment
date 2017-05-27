@@ -1,0 +1,47 @@
+Runtime
+
+1. When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity. You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+
+A: The workload is determined by the number of animal crackers are in the box.
+
+2. Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+O(log n)
+O(n^2)
+O(n log n)
+O(n)
+O(2^n)
+O(1)
+
+A: O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n)
+
+Stacks and Queues
+
+1. In the following cases, would a stack or queue be a more appropriate data structure?
+    a. The process of loading and unloading pallets onto a flatbed truck
+        A: Stack
+    b. Putting bottle caps on bottles of beer as they roll down an assembly line
+        A: Queue
+    c. Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+        A: Stack
+2. Describe two more situations where a queue would be an appropriate data structure.
+    A: Waiting in line to get ice cream; a to do list
+3. Describe two more situations where a stack would be an appropriate data structure.
+    A: Function call stacks; Pez candy dispenser
+
+Linked Lists
+
+1. Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+    A: The nodes are the boxes that contain a string and a pointer to next. The data for each node is the string contained within the box. The head is the pointer to the node that contains "Apple". This linked list does not contain a pointer for tail but if it did, it would point to the "Cherry" node.
+2. What’s the difference between doubly- and singly-linked lists?
+    A: A singly-linked list can only be traversed in one direction (typically from head to either a tail or to a node that has None for it's next pointer). A doubly-linked list can be traversed in both directions because the linked list has a pointer to both the head and the tail and each node has a pointer to next and previous nodes. 
+3. Why is it faster to append to a linked list if we keep track of the tail as an attribute
+    A: It is faster because instead of having to traverse the entire list to find where to append the last item, we can go to the tail directly and have the tail point to the newly created node and have that node be the new tail.
+
+Trees
+
+1. Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burritos (starting at food)? (Assume nodes are enqueued in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+    A: food, Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, burritos
+2. Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? (Assume nodes are pushed in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+    A: food, Mexican, enchiladas, tacos, burritos
+3. How is a binary search tree different from other trees?
+    A: A binary search tree is a type of tree that has at most two children per node and is arranged in a particular known order.
